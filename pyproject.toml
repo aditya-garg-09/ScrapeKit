@@ -1,0 +1,11 @@
+[project]
+name = "scrapekit"
+version = "0.1.0"
+description = "A local-first, security-conscious web scraper"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "live: marks tests that require real internet access (deselect with '-m not live')"
+]
